@@ -128,7 +128,7 @@ In each template, the graphs are constructed with 3 bands of the amplitude of lo
 
 ​													|------------ sub_0050002_aal3_all_positive.mat
 
-​													$ \vdots$
+​													$\vdots$
 
 ​							| ----------📁：ASD_NF
 
