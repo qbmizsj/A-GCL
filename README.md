@@ -134,19 +134,19 @@ In each template, the graphs are constructed with 3 bands of the amplitude of lo
 
 ​													|------------ alff_sub-0050002.mat
 
-​													$ \vdots$
+​													$\vdots$
 
 ​							|-----------📁：HC_ADJ	
 
 ​													|------------ sub_0050002_aal3_all_positive.mat
 
-​													$ \vdots$
+​													$\vdots$
 
 ​							|-----------📁：HC_NF			
 
 ​													|------------ alff_sub-0050002.mat
 
-​													$ \vdots$
+​													$\vdots$
 
 * Read the `node feature`:
 
