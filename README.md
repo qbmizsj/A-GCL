@@ -221,7 +221,7 @@ optional arguments:
   --seed SEED
 ```
 
-## AGCL with dynamic memory bank(queue)
+## A-GCL with dynamic memory bank(queue)
 
 ---
 
