@@ -225,10 +225,10 @@ optional arguments:
 
 ---
 
-To perform self-supervised training on ABIDE using a 1-gpu machine, run:
+To perform self-supervised training with dynamic memory bank(queue) on ABIDE using a 1-gpu machine, run:
 
 ```python
-python agcl_ABIDE.py \ 
+python agcl_ABIDE_queue.py \ 
   --model_lr 0.0005 \
   --view_lr 0.0005 \
   --batch-size 32 \
@@ -237,13 +237,16 @@ python agcl_ABIDE.py \
   --drop_ratio 0.3 \
   --reg_lambda 2.0 \
   --eval_interval 5 \
-  --epochs 100
+  --epochs 100 \
+  --cr_lambda 0.4 \
+  --memory_type 'queue' \
+  --feature_type 'instance'
 ```
 
 More details about arguments are concluded as follow:
 
 ```python
-A-GCL ABIDE
+A-GCL(queue) ABIDE
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -264,9 +267,13 @@ optional arguments:
   --reg_lambda REG_LAMBDA
                         View Learner Edge Perturb Regularization Strength
   --eval_interval EVAL_INTERVAL 
-  											eval epochs interval
+  						eval epochs interval
   --downstream_classifier DOWNSTREAM_CLASSIFIER 
-  											Downstream classifier is linear or non-linear
+  						Downstream classifier is linear or non-linear
+  --cr_lambda
+                        Regularization coefficients for loss of cross-batch memory bank 
+  --memory_type         type of memory bank
+  --feature_type        type of feature in memory bank
   --seed SEED
 ```
 
