@@ -250,30 +250,30 @@ A-GCL(queue) ABIDE
 
 optional arguments:
   -h, --help            show this help message and exit
-  --model_lr MODEL_LR   Model Learning rate.
-  --view_lr VIEW_LR     View Learning rate.
+  --model_lr MODEL_LR   Model learning rate.
+  --view_lr VIEW_LR     View learning rate.
   --num_gc_layers NUM_GC_LAYERS
                         Number of GNN layers before pooling
   --pooling_type POOLING_TYPE
-                        GNN Pooling Type Standard/Layerwise
-  --emb_dim EMB_DIM     embedding dimension
+                        GNN pooling type standard/Layerwise
+  --emb_dim EMB_DIM     Embedding dimension
   --mlp_edge_model_dim MLP_EDGE_MODEL_DIM
-                        embedding dimension for MLP in view learner
+                        Embedding dimension for MLP in view learner
   --batch_size BATCH_SIZE
-                        batch size
+                        Batch size
   --drop_ratio DROP_RATIO
-                        Dropout Ratio / Probability
-  --epochs EPOCHS       Train Epochs
+                        Dropout ratio / Probability
+  --epochs EPOCHS       Train epochs
   --reg_lambda REG_LAMBDA
-                        View Learner Edge Perturb Regularization Strength
+                        View learner edge perturb regularization strength
   --eval_interval EVAL_INTERVAL 
-  						eval epochs interval
+  						Eval epochs interval
   --downstream_classifier DOWNSTREAM_CLASSIFIER 
   						Downstream classifier is linear or non-linear
   --cr_lambda
                         Regularization coefficients for loss of cross-batch memory bank 
-  --memory_type         type of memory bank
-  --feature_type        type of feature in memory bank
+  --memory_type         Type of memory bank
+  --feature_type        Type of feature in memory bank
   --seed SEED
 ```
 
