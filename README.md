@@ -239,8 +239,8 @@ python agcl_ABIDE_queue.py \
   --eval_interval 5 \
   --epochs 100 \
   --cr_lambda 0.4 \
-  --memory_type 'queue' \
-  --feature_type 'instance' \
+  --memory_type queue \
+  --feature_type instance \
   --max_length 256
 ```
 
@@ -251,8 +251,8 @@ A-GCL(queue) ABIDE
 
 optional arguments:
   -h, --help            show this help message and exit
-  --model_lr MODEL_LR   Model learning rate.
-  --view_lr VIEW_LR     View learning rate.
+  --model_lr MODEL_LR   Model learning rate
+  --view_lr VIEW_LR     View learning rate
   --num_gc_layers NUM_GC_LAYERS
                         Number of GNN layers before pooling
   --pooling_type POOLING_TYPE
