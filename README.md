@@ -220,7 +220,7 @@ optional arguments:
   											Downstream classifier is linear or non-linear
   --seed SEED
 ```
-
+If you have any questions about the settings or data pre-processing of A-GCL, please contact me through ``zsjxll@gmail.com``
 If you find our work beneficial to your work, please cite our paper
 
 ```tex
