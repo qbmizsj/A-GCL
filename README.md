@@ -220,6 +220,56 @@ optional arguments:
   											Downstream classifier is linear or non-linear
   --seed SEED
 ```
+
+## AGCL with dynamic memory bank(queue)
+
+---
+
+To perform self-supervised training on ABIDE using a 1-gpu machine, run:
+
+```python
+python agcl_ABIDE.py \ 
+  --model_lr 0.0005 \
+  --view_lr 0.0005 \
+  --batch-size 32 \
+  --num_gc_layers 2 \
+  --emb_dim 32 \	
+  --drop_ratio 0.3 \
+  --reg_lambda 2.0 \
+  --eval_interval 5 \
+  --epochs 100
+```
+
+More details about arguments are concluded as follow:
+
+```python
+A-GCL ABIDE
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model_lr MODEL_LR   Model Learning rate.
+  --view_lr VIEW_LR     View Learning rate.
+  --num_gc_layers NUM_GC_LAYERS
+                        Number of GNN layers before pooling
+  --pooling_type POOLING_TYPE
+                        GNN Pooling Type Standard/Layerwise
+  --emb_dim EMB_DIM     embedding dimension
+  --mlp_edge_model_dim MLP_EDGE_MODEL_DIM
+                        embedding dimension for MLP in view learner
+  --batch_size BATCH_SIZE
+                        batch size
+  --drop_ratio DROP_RATIO
+                        Dropout Ratio / Probability
+  --epochs EPOCHS       Train Epochs
+  --reg_lambda REG_LAMBDA
+                        View Learner Edge Perturb Regularization Strength
+  --eval_interval EVAL_INTERVAL 
+  											eval epochs interval
+  --downstream_classifier DOWNSTREAM_CLASSIFIER 
+  											Downstream classifier is linear or non-linear
+  --seed SEED
+```
+
 If you have any questions about the settings or data pre-processing of A-GCL, please contact me through ``zsjxll@gmail.com``
 If you find our work beneficial to your work, please cite our paper
 
