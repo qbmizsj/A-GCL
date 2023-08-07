@@ -240,7 +240,8 @@ python agcl_ABIDE_queue.py \
   --epochs 100 \
   --cr_lambda 0.4 \
   --memory_type 'queue' \
-  --feature_type 'instance'
+  --feature_type 'instance' \
+  --max_length 256
 ```
 
 More details about arguments are concluded as follow:
@@ -274,6 +275,7 @@ optional arguments:
                         Regularization coefficients for loss of cross-batch memory bank 
   --memory_type         Type of memory bank
   --feature_type        Type of feature in memory bank
+  --max_length          Max length of memory bank
   --seed SEED
 ```
 
